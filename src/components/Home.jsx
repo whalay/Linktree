@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import share from "../assets/Icon1.png";
 import I4G from "../assets/I4G.png";
-import zuri from "../assets/zuri.png";
+import zuri from "../assets/Zuri.png";
 import more from "../assets/Icon.png";
 import slack from "../assets/slack.png";
 import github from "../assets/git.png";
