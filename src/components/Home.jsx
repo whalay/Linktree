@@ -24,24 +24,24 @@ const Home = () => {
         </div>
         <ul className="text-center">
           <a href="http://twitter.com/holar102" id="twitter">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20">Twitter Link</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Twitter Link</li>
           </a>
           <a href="http://books.zuri.team" id="btn_zuri">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20">Zuri Team</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Zuri Team</li>
           </a>
           <a href="http://books.zuri.team" i="books">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20">Zuri Books</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Zuri Books</li>
           </a>
           <a href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" id="book_python">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20">Python Books</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Python Books</li>
           </a>
           <a href="https://background.zuri.team" id="pitch">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20">
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">
               Background Check for Coders
             </li>
           </a>
           <a href="https://books.zuri.team/design-rules" id="book_design">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20">Design Books</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Design Books active:bg-[#D0D5DD]</li>
           </a>
         </ul>
         <div className="flex justify-center gap-5">
