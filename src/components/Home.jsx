@@ -41,7 +41,7 @@ const Home = () => {
             </li>
           </a>
           <a href="https://books.zuri.team/design-rules" target="_blank" id="book_design">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Design Books active:bg-[#D0D5DD]</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 active:bg-[#D0D5DD] hover:bg-[#D0D5DD]">Design Books active:bg-[#D0D5DD]</li>
           </a>
         </ul>
         <div className="flex justify-center gap-5">
