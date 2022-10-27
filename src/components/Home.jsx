@@ -68,8 +68,8 @@ const Home = () => {
           </a>
         </ul>
         <div className="flex justify-center gap-5">
-          <img src={slack} alt="" />
-          <img src={github} alt="" />
+        <a href="https://app.slack.com/client/T042F7V19Q8/C041JU70S5U/rimeto_profile/U0487V7BULV"><img src={slack} alt="" /></a>
+       <a href="https://github.com/whalay"><img src={github} alt="" /></a>
         </div>
       </div>
       <footer className="test-left p-5 mt-36 ">
