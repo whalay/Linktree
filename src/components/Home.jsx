@@ -19,29 +19,52 @@ const Home = () => {
           <span className="absolute top-3 right-64 border rounded-full p-2 py-3 hidden md:block">
             <img src={share} alt="" />
           </span>
-          <img src={profile} alt="" className="m-auto" id="profile_img"/>
+          <img src={profile} alt="" className="m-auto" id="profile_img" />
           <p className="font-bold text-3xl">Soliu Yusuf</p>
         </div>
         <ul className="text-center">
           <a href="http://twitter.com/holar102" target="_blank" id="twitter">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Twitter Link</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">
+              Twitter Link
+            </li>
           </a>
+
+          <li id="slack"className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD] hidden">
+            Slack name
+          </li>
+
           <a href="http://books.zuri.team" target="_blank" id="btn_zuri">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Zuri Team</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">
+              Zuri Team
+            </li>
           </a>
           <a href="http://books.zuri.team" target="_blank" i="books">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Zuri Books</li>
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">
+              Zuri Books
+            </li>
           </a>
-          <a href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>" target="_blank" id="book_python">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">Python Books</li>
+          <a
+            href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>"
+            target="_blank"
+            id="book_python"
+          >
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">
+              Python Books
+            </li>
           </a>
           <a href="https://background.zuri.team" target="_blank" id="pitch">
             <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]">
               Background Check for Coders
             </li>
           </a>
-          <a href="https://books.zuri.team/design-rules" target="_blank" id="book_design">
-            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 active:bg-[#D0D5DD] hover:bg-[#D0D5DD]">Design Books</li>
+          <a
+            href="https://books.zuri.team/design-rules"
+            target="_blank"
+            id="book_design"
+          >
+            <li className="bg-[#EAECF0] p-4 m-4 md:mx-20 active:bg-[#D0D5DD] hover:bg-[#D0D5DD]">
+              Design Books
+            </li>
           </a>
         </ul>
         <div className="flex justify-center gap-5">
