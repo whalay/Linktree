@@ -31,13 +31,12 @@ const Home = () => {
             Twitter Link
           </a>
 
-          <a
-            href="/"
+          <p
             id="slack"
             className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD] hidden"
           >
-            Holar
-          </a>
+            holar
+          </p>
 
           <a
             href="http://books.zuri.team"
