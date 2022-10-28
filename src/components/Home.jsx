@@ -55,7 +55,7 @@ const Home = () => {
             Zuri Books
           </a>
           <a
-            href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>"
+            href="https://books.zuri.team/python-for-beginners?ref_id=holar"
             target="_blank"
             id="book__python"
             className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]"
@@ -68,7 +68,7 @@ const Home = () => {
             id="pitch"
             className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]"
           >
-            Background Check for Coders
+           Check for Coders
           </a>
           <a
             href="https://books.zuri.team/design-rules"
