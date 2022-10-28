@@ -39,7 +39,7 @@ const Home = () => {
           </p>
 
           <a
-            href="http://books.zuri.team"
+            href="https://training.zuri.team/"
             target="_blank"
             id="btn__zuri"
             className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]"
