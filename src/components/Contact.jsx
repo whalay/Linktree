@@ -99,7 +99,7 @@ const [successMsg, setSuccessMsg] = useState("")
                 }`}
               />
               {FnameHasError && (
-                <p className="text-red-600">please input your First name</p>
+                <p className="text-red-600">Please input your First name</p>
               )}
             </div>
             <div className="w-full md:w-1/2 px-3  ">
@@ -163,7 +163,7 @@ const [successMsg, setSuccessMsg] = useState("")
             <label className="" htmlFor=""></label>
             <input type="checkbox" name="" id="" className="mr-3" />
             <span className="">
-              You agree to providing your data to Yusuf who may contact you.
+              You agree to providing your data to Soliu Yusuf who may contact you.
             </span>
           </div>
 
