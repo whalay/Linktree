@@ -94,7 +94,7 @@ const [successMsg, setSuccessMsg] = useState("")
                 type="text"
                 id="first_name"
                 placeholder="Enter your first name"
-                className={`block w-full  border   px-2 py-1 md:mb-3 leading-tight rounded-md ${
+                className={`block w-full  border   px-2 py-1 mb-3 leading-tight rounded-md ${
                   FnameHasError ? "border-red-500" : "border-gray-300"
                 }`}
               />
@@ -113,7 +113,7 @@ const [successMsg, setSuccessMsg] = useState("")
                 type="text"
                 id="last_name"
                 placeholder="Enter your first name"
-                className={`block w-full  border   px-2 py-1 md:mb-3 leading-tight rounded-md ${
+                className={`block w-full  border   px-2 py-1 mb-3 leading-tight rounded-md ${
                   LnameHasError ? "border-red-500" : "border-gray-300"
                 }`}
               />
@@ -134,7 +134,7 @@ const [successMsg, setSuccessMsg] = useState("")
                 type="email"
                 id="email"
                 placeholder="yourname@gmail.com"
-                className={`block w-full  border   px-2 py-1 md:mb-3 leading-tight rounded-md ${
+                className={`block w-full  border   px-2 py-1 mb-3 leading-tight rounded-md ${
                   emailHasError ? "border-red-500" : "border-gray-300"
                 }`}
               />
