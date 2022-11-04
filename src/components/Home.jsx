@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import share from "../assets/Icon1.png";
 import I4G from "../assets/I4G.png";
 import zuri from "../assets/Zuri.png";
@@ -78,6 +79,13 @@ const Home = () => {
           >
             Design Books
           </a>
+          <Link
+            to="/contact"
+            id="contact"
+            className="bg-[#EAECF0] p-4 m-4 md:mx-20 hover:bg-[#D0D5DD] active:bg-[#D0D5DD]"
+          >
+            Contact Me
+          </Link>
         </div>
         <div className="flex justify-center gap-5">
           <a href="https://app.slack.com/client/T042F7V19Q8/C041JU70S5U/rimeto_profile/U0487V7BULV">
