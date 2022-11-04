@@ -3,6 +3,10 @@ import useInput from "../hooks/user-input";
 import { useState } from "react";
 
 const Contact = (props) => {
+const [successMsg, setSuccessMsg] = useState("")
+
+
+
   const {
     value: enteredFname,
     isValid: enteredFnameIsValid,
@@ -22,8 +26,8 @@ const Contact = (props) => {
   } = useInput((value) => value.trim() !== "");
 
   const {
-    value: enteredMesssage,
-    isValid: enteredMessage,
+    value: enteredMessage,
+    isValid: enteredMessageIsValid,
     hasError: messageHasError,
     valueChangeHandler: messageChangedHandler,
     inputBlurHandler: messageBlurHandler,
@@ -41,17 +45,13 @@ const Contact = (props) => {
 
   let formIsValid = false;
 
-  if (enteredFnameIsValid && enteredLnameIsValid && enteredEmailIsValid) {
+  if (enteredFnameIsValid && enteredLnameIsValid && enteredEmailIsValid && enteredMessageIsValid) {
     formIsValid = true;
   }
 
-  const emailHandler = (event) => {
-    setEnteredEmail(event.target.value);
-  };
-
-  const messageHandler = (event) => {
-    setEnteredMessage(event.target.value);
-  };
+ const successHandler = () => {
+  setSuccessMsg("Your form have been submitted successfully");
+ }
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -60,9 +60,8 @@ const Contact = (props) => {
       return;
     }
 
-    console.log(enteredFname, enteredLname);
-    console.log(enteredEmail);
-    console.log(enteredMessage);
+    successHandler();
+
     resetFname();
     resetLname();
     resetEmail();
@@ -70,9 +69,10 @@ const Contact = (props) => {
   };
 
   return (
-    <div className="flex flex-col md:justify-center items-center  md:w-screen h-screen md:absolute top-0 left-0 px-3">
-      <div>
+    <div className="flex flex-col md:justify-center items-center  md:w-screen h-screen  px-3">
+      <div className="mt-10 md:mt-0">
         <div className="pb-6">
+         <p className="text-xl md:text-2xl text-green-400 text-center font-semibold">{successMsg }</p> 
           <h1 className="text-2xl font-bold  py-2">Contact Me</h1>
           <p className="">
             Hi there, contact me to ask me about anything you have in mind.
@@ -90,6 +90,7 @@ const Contact = (props) => {
               <input
                 onChange={FnameChangedHandler}
                 onBlur={FnameBlurHandler}
+                value={enteredFname}
                 type="text"
                 id="first_name"
                 placeholder="Enter your first name"
@@ -108,6 +109,7 @@ const Contact = (props) => {
               <input
                 onChange={LnameChangedHandler}
                 onBlur={LnameBlurHandler}
+                value={enteredLname}
                 type="text"
                 id="last_name"
                 placeholder="Enter your first name"
@@ -128,6 +130,7 @@ const Contact = (props) => {
               <input
                 onChange={emailChangedHandler}
                 onBlur={emailBlurHandler}
+                value={enteredEmail}
                 type="email"
                 id="email"
                 placeholder="yourname@gmail.com"
@@ -146,26 +149,28 @@ const Contact = (props) => {
           <textarea
             onChange={messageChangedHandler}
             onBlur={messageBlurHandler}
+            value={enteredMessage}
             name="message"
             id="message"
             rows="3"
-            placeholder="Send message and i will reply as soon as possible"
+            placeholder="Send me a message and i'll reply you as soon as possible"
             className={`px-2 py-1 mb-3 border  rounded-lg ${messageHasError ? 'border-red-500' :'border-gray-300'}`}
           ></textarea>
           {messageHasError && (
-            <p className="text-red-600">What did you want to tell us?</p>
+            <p className="text-red-600">Please enter a message</p>
           )}
           <div className="w-full mb-3">
             <label className="" htmlFor=""></label>
             <input type="checkbox" name="" id="" className="mr-3" />
             <span className="">
-              You agree to providing your data to who may contact you.
+              You agree to providing your data to Yusuf who may contact you.
             </span>
           </div>
 
           <div className="w-full py-3">
             <button
-              className="bg-blue-500 text-white w-full py-2 rounded-lg"
+              className={`bg-blue-700 text-white w-full py-2 rounded-lg ${!formIsValid ? ' cursor-not-allowed focus:outline-none disabled:opacity-50' : 'opacity-100'}` }
+              disabled={!formIsValid}
               id="btn__submit"
             >
               Send message

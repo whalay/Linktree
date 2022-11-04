@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import share from "../assets/Icon1.png";
-import I4G from "../assets/I4G.png";
-import zuri from "../assets/Zuri.png";
+
 import more from "../assets/Icon.png";
 import slack from "../assets/slack.png";
 import github from "../assets/git.png";
@@ -11,7 +10,7 @@ import profile from "../assets/profile.png";
 const Home = () => {
   return (
     <Fragment>
-      <div className="text-md text-center h-screen">
+      <div className="text-md text-center h-screen mb-56">
         <div className="my-10 relative">
           <span className="absolute top-3 right-8 border rounded-full p-2 py-3 md:hidden">
             <img src={more} alt="" />
@@ -96,14 +95,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <footer className="test-left p-5 mt-28 ">
-        <hr />
-        <div className="p-5  md:flex justify-between">
-          <img src={I4G} alt="" />
-          <p>HNG Internshhip 9 Frontend task</p>
-          <img src={zuri} alt="" />
-        </div>
-      </footer>
+      
     </Fragment>
   );
 };
